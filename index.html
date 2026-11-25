@@ -13,6 +13,34 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
+<dialog id="visor-video">
+	<video controls playsinline preload="none" style="width:100%"></video>
+	<button type="button" id="cerrar-video">Cerrar</button>
+</dialog>
+
+<script>
+	const visor = document.getElementById("visor-video");
+	const video = visor.querySelector("video");
+
+	document.querySelectorAll(".ver-video").forEach(enlace => {
+		enlace.addEventListener("click", (e) => {
+			e.preventDefault();
+			video.src = enlace.href;
+			visor.showModal();
+			video.play();
+		});
+	});
+
+	document.getElementById("cerrar-video").addEventListener("click", () => visor.close());
+
+	// al cerrar (con el botón o con Esc), se detiene el video
+	visor.addEventListener("close", () => {
+		video.pause();
+		video.removeAttribute("src");
+		video.load();
+	});
+</script>
+
 <body class="is-preload">
 
 	<!-- Header -->
@@ -22,7 +50,7 @@
 
 			<!-- Logo -->
 			<div id="logo">
-				<span class="image avatar48"><img src="images/ProfessionalPic.png" alt="" /></span>
+				<span class="image avatar48"><img src="images/professional-pic.png" alt="" /></span>
 				<h1 id="title">Cristhian Beltrán</h1>
 				<p>Desarrollador Web Fullstack</p>
 			</div>
@@ -69,7 +97,8 @@
 			<div class="container">
 
 				<header>
-					<h2 class="alt" id="intro_saludo">Hola! Mi nombre es <strong>Cristhian Beltrán</strong><br> Desarrollador web
+					<h2 class="alt" id="intro_saludo">Hola! Mi nombre es <strong>Cristhian Beltrán</strong><br>
+						Desarrollador web
 						Fullstack</h2>
 					<p id="intro_habilidades">JavaScript | NodeJS | Angular | MEAN | CSS3 <br />
 						HTML5 | SQL | MySQL | Spring Boot</p>
@@ -105,7 +134,8 @@
 				<div class="row">
 					<div class="col-6 col-12-mobile">
 						<article class="item">
-							<a href="#" class="image fit"><img src="/images/KitBox.png" alt="" /></a>
+							<a href="videos/demo-kitbox.mp4" class="image fit ver-video"><img src="images/kit-box.png"
+									alt="Demo de Kit-Box e-commerce" /></a>
 							<header>
 								<h3>Kit-Box e-commerce</h3>
 								<p>Ipsum dolor sit amet</p>
@@ -122,39 +152,39 @@
 					</div>
 					<div class="col-6 col-12-mobile">
 						<article class="item">
-							<a href="#" class="image fit"><img src="images/PlanificadorTareas.png" alt="" /></a>
+							<a href="videos/demo-planificador.mp4" class="image fit ver-video"><img src="images/planificador-tareas.png"
+									alt="Demo de Kit-Box e-commerce" /></a>							
 							<header>
 								<h3>Planificador de Tareas</h3>
 								<p>Ipsum dolor sit amet</p>
-
 							</header>
 						</article>
 						<article class="item">
-							<a href="#" class="image fit"><img src="images/PokeAPI.png" alt="" /></a>
+							<a href="videos/demo-pokeapi.mp4" class="image fit ver-video"><img src="images/poke-api.png"
+									alt="Demo de Kit-Box e-commerce" /></a>							
 							<header>
 								<h3>PokeAPI</h3>
 								<p>Ipsum dolor sit amet</p>
-
 							</header>
 						</article>
 					</div>
 					<div class="col-6 col-12-mobile">
 						<article class="item">
-							<a href="#" class="image fit"><img src="images/CalculadoraTemperaturas.png" alt="" /></a>
+							<a href="videos/demo-conversor.mp4" class="image fit ver-video"><img src="images/conversor-temperaturas.png"
+									alt="Demo de Kit-Box e-commerce" /></a>							
 							<header>
 								<h3>Conversor de Temperaturas</h3>
 								<p>Ipsum dolor sit amet</p>
-
 							</header>
 						</article>
 					</div>
 					<div class="col-6 col-12-mobile">
 						<article class="item">
-							<a href="#" class="image fit"><img src="images/CalculadoraFactorial.png" alt="" /></a>
+							<a href="videos/demo-factorial.mp4" class="image fit ver-video"><img src="images/calculadora-factorial.png"
+									alt="Demo de Kit-Box e-commerce" /></a>							
 							<header>
 								<h3>Calculadora Factorial</h3>
 								<p>Ipsum dolor sit amet</p>
-
 							</header>
 						</article>
 					</div>
@@ -171,7 +201,7 @@
 					<h2>Acerca de Mí</h2>
 				</header>
 
-				<a href="#" class="image featured"><img src="images/ProfessionalPicBanner.png" alt="" /></a>
+				<a href="#" class="image featured"><img src="images/professional-pic-banner.png" alt="" /></a>
 
 				<p> Poseo sólidos conocimientos en el desarrollo de aplicaciones completas con
 					MEAN Stack (MongoDB, ExpressJS, Angular, NodeJS), bases de datos SQL y MySQL,

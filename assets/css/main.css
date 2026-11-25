@@ -2663,3 +2663,8 @@ input, select, textarea {
 #intro_habilidades {
 	font-weight: bold;
 }
+
+/* REPRODUCCIÓN DE VIDEOS */
+
+#visor-video { width: min(900px, 92vw); padding: 0; border: 0; border-radius: 8px; }
+#visor-video::backdrop { background: rgba(0, 0, 0, 0.7); }
