@@ -2631,3 +2631,35 @@ input, select, textarea {
 				}
 
 	}
+
+	/* ESTILOS IMAGEN DE FONDO DE INTRO DIFUMINADA */
+
+	#top {
+	position: relative;
+	overflow: hidden;
+	isolation: isolate;          /* mantiene la capa de fondo dentro de esta sección */
+	background: #1a1a1a;         /* color de respaldo mientras carga la imagen */
+}
+
+#top::before {
+	content: "";
+	position: absolute;
+	inset: -20px;                /* sobra un poco para que el desenfoque no deje bordes claros */
+	z-index: -1;
+	background:
+		linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),  /* oscurece para leer el texto */
+		url("../../images/fondo-intro.jpg") center / cover no-repeat;
+	background:
+		linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+		image-set(url("../../images/fondo-intro-WEBP.webp") type("image/webp"),
+		          url("../../images/fondo-intro-JPG.jpg") type("image/jpeg")) center / cover no-repeat;
+	filter: blur(6px);
+}
+
+#intro_saludo {
+	font-weight:bolder;
+}
+
+#intro_habilidades {
+	font-weight: bold;
+}
