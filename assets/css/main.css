@@ -2670,3 +2670,14 @@ input, select, textarea {
 
 #visor-video { width: min(900px, 92vw); padding: 0; border: 0; border-radius: 8px; }
 #visor-video::backdrop { background: rgba(0, 0, 0, 0.7); }
+
+/* TEXTO NEGRO PARA LAS SECCIONES CLARAS DEL PORTAFOLIO */
+
+#main > section.two h2,
+#main > section.three h2,
+#main > section.four h2,
+#main > section.two p,
+#main > section.three p,
+#main > section.four p {
+	color: #000;
+}

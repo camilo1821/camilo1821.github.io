@@ -10,6 +10,7 @@
 	<title>Portafolio Personal</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
@@ -119,15 +120,14 @@
 					<h2>Portafolio</h2>
 				</header>
 
-				<p> A continuación podras navegar entre mis proyectos más recientes, en los que demuestro mis 
+				<p> A continuación podras navegar entre mis proyectos más recientes, en los que demuestro mis
 					habilidades en programación adquiridas a través de varios años, especialmente en Java y JavaScript.
-					Por medio de la implementación de HTML5 y CSS3, asi como bases de datos entre las que destacan 
-					MySQL y MongoDB y haciendo usos de frameworks como SpringBoot el desarrollo de Backed y Angular 
+					Por medio de la implementación de HTML5 y CSS3, asi como bases de datos entre las que destacan
+					MySQL y MongoDB y haciendo usos de frameworks como SpringBoot el desarrollo de Backed y Angular
 					para el desarrollo del Frontend, y Node.js como entorno de ejecución.
 					<br /><br />
-					<strong>Mi portafolio sigue creciendo a través del tiempo y se nutre cada vez más para abordar 
-						nuevos desafios!
-					</strong>
+					Mi portafolio sigue creciendo a través del tiempo y se nutre cada vez más para abordar
+					nuevos desafios!
 				</p>
 
 				<div class="row">
@@ -136,29 +136,47 @@
 							<a href="videos/demo-kitbox.mp4" class="image fit ver-video"><img src="images/kit-box.png"
 									alt="Demo de Kit-Box e-commerce" /></a>
 							<header>
-								<h3>Kit-Box e-commerce</h3>
-								<p>Plataforma e-commerce responsivo que incorpora estilos e interactividad con CSS, 
-									JavaScript y HTML5 en el frontend y cuenta con una base de datos en MySQL que 
-									consta inicialmente de 4 entidades.
-								<br /><br>										
-									El backend se desarrolla por medio de Java haciendo uso de Sring Boot, 
+								<h3 class="btn" type="button" data-bs-toggle="collapse"
+									data-bs-target="#multiCollapseExample1" aria-expanded="false"
+									aria-controls="multiCollapseExample1">Kit-Box e-commerce</h3>
+								<p class="collapse multi-collapse" id="multiCollapseExample1">Plataforma e-commerce
+									responsivo que incorpora estilos e interactividad con CSS, JavaScript y HTML5 en
+									el frontend y cuenta con una base de datos en MySQL que consta inicialmente de 4
+									entidades.
+									<br /><br>
+									El backend se desarrolla por medio de Java haciendo uso de Sring Boot,
 									implementando el desarrollo por capas para ejecutar las operaciones CRUD.
-
-									https://kit-box.diana-lizeth-ocampo.workers.dev/src/
+								<div class="d-grid gap-2 col-6 mx-auto">
+									<a class="btn btn-dark" type="button"
+										href="https://kit-box.diana-lizeth-ocampo.workers.dev/src/" target="_blank"
+										rel="noopener noreferrer">Ver Proyecto Desplegado
+									</a>
+								</div>
 								</p>
 							</header>
 						</article>
 						<article class="item">
-							<a href="videos/demo-odontologia.mp4" class="image fit ver-video"><img src="images/consultorio-odontologico.png"
+							<a href="videos/demo-odontologia.mp4" class="image fit ver-video"><img
+									src="images/consultorio-odontologico.png"
 									alt="Demo de Consultorio Odontológico H&M" /></a>
 							<header>
-								<h3>Consultorio Odontológico H&M</h3>
-								<p>Plataforma para un consultorio odontológico. Tanto el backend como el frontend se 
-									desarrollan desarrolla a través de frameworks como Angular, Node.js y Express.js. 
-								<br /><br>										
-									Se apoya en JavaScript, TypeScript, HTML, CSS y Bootstrap para consolidar su 
-									estructura y su información se gestiona a traves de una base de datos NoSQL, y en 
+								<h3 class="btn" type="button" data-bs-toggle="collapse"
+									data-bs-target="#multiCollapseExample2" aria-expanded="false"
+									aria-controls="multiCollapseExample2">Consultorio Odontológico
+									H&M</h3>
+								<p class="collapse multi-collapse" id="multiCollapseExample2">Plataforma para un
+									consultorio odontológico. Tanto el backend como el frontend se desarrollan
+									a través de frameworks como Angular, Node.js y Express.js.
+									<br /><br>
+									Se apoya en JavaScript, TypeScript, HTML, CSS y Bootstrap para consolidar su
+									estructura y su información se gestiona a traves de una base de datos NoSQL, y en
 									este caso se trata de MongoDB.
+								<div class="d-grid gap-2 col-6 mx-auto">
+									<a class="btn btn-dark" type="button"
+										href="https://kit-box.diana-lizeth-ocampo.workers.dev/src/" target="_blank"
+										rel="noopener noreferrer">Ver Proyecto Desplegado
+									</a>
+								</div>
 								</p>
 							</header>
 						</article>
@@ -168,17 +186,23 @@
 							<a href="videos/demo-planificador.mp4" class="image fit ver-video"><img
 									src="images/planificador-tareas.png" alt="Demo de Planificador de Tareas" /></a>
 							<header>
-								<h3>Planificador de Tareas</h3>
-								<p>Aplicación web adaptable a cualquier dispositivo para organizar y dar seguimiento a 
-									tareas del día a día. El frontend combina HTML5, CSS y JavaScript para ofrecer una 
-									interfaz interactiva, y los datos se almacenan en una base de datos MySQL que 
-									arranca con 4 entidades.
-								<br /><br>
-									La lógica del servidor está desarrollada en Java con Spring Boot y organizada en 
-									capas, lo que permite crear, consultar, modificar y eliminar tareas de forma 
+								<h3 class="btn" type="button" data-bs-toggle="collapse"
+									data-bs-target="#multiCollapseExample3" aria-expanded="false"
+									aria-controls="multiCollapseExample3">Planificador de Tareas</h3>
+								<p class="collapse multi-collapse" id="multiCollapseExample3">Aplicación web adaptable
+									a cualquier dispositivo para organizar y dar seguimiento a tareas del día a día.
+									El frontend combina HTML5, CSS y JavaScript para ofrecer una interfaz interactiva,
+									y los datos se almacenan en una base de datos MySQL que arranca con 4 entidades.
+									<br /><br>
+									La lógica del servidor está desarrollada en Java con Spring Boot y organizada en
+									capas, lo que permite crear, consultar, modificar y eliminar tareas de forma
 									ordenada.
-
-									https://tareas-cristhian-b.crcbeltranra.workers.dev/
+								<div class="d-grid gap-2 col-6 mx-auto">
+									<a class="btn btn-dark" type="button" 
+									href="https://tareas-cristhian-b.crcbeltranra.workers.dev/" 
+									target="_blank" rel="noopener noreferrer">Ver Proyecto Desplegado
+									</a>
+								</div>
 								</p>
 							</header>
 						</article>
@@ -186,10 +210,19 @@
 							<a href="videos/demo-pokeapi.mp4" class="image fit ver-video"><img src="images/poke-api.png"
 									alt="Demo de PokeAPI" /></a>
 							<header>
-								<h3>PokeAPI</h3>
-								<p>Se trata de una aplicación web que consuma la PokéAPI para buscar Pokémon por nombre,
-									que muestra la información en tarjetas y además permite guardar Pokémon favoritos 
-									en localStorage para que persistan entre sesiones.
+								<h3 class="btn" type="button" data-bs-toggle="collapse"
+									data-bs-target="#multiCollapseExample4" aria-expanded="false"
+									aria-controls="multiCollapseExample4">PokeAPI</h3>
+								<p class="collapse multi-collapse" id="multiCollapseExample4">Se trata de una
+									aplicación web que consuma la PokéAPI para buscar Pokémon por nombre, que muestra
+									su nombre, ataque y defensa en tarjetas junto a su imagen, que además permite
+									guardar tus Pokémon favoritos en localStorage para que persistan entre sesiones.
+								<div class="d-grid gap-2 col-6 mx-auto">
+									<a class="btn btn-dark" type="button" 
+									href="https://tareas-cristhian-b.crcbeltranra.workers.dev/" 
+									target="_blank" rel="noopener noreferrer">Ver Proyecto Desplegado
+									</a>
+								</div>									
 								</p>
 							</header>
 						</article>
@@ -200,12 +233,19 @@
 									src="images/conversor-temperaturas.png"
 									alt="Demo de Conversor de temperaturas" /></a>
 							<header>
-								<h3>Conversor de Temperaturas</h3>
-								<p>Es un programa en Javascript que convierte temperaturas. Solicita al usuario 
-									la temperatura en grados Celsius por medio de un input y se encarga de convertirla 
-									a grados Fahrenheit y Kelvin e impre ambos resultados haciendo uso del DOM.
-
-									https://camilo1821.github.io/conversor-temperaturas/
+								<h3 class="btn" type="button" data-bs-toggle="collapse"
+									data-bs-target="#multiCollapseExample5" aria-expanded="false"
+									aria-controls="multiCollapseExample5">Conversor de Temperaturas</h3>
+								<p class="collapse multi-collapse" id="multiCollapseExample5">Es un programa en
+									Javascript que convierte temperaturas. Solicita al usuario la temperatura en grados
+									Celsius por medio de un input y se encarga de convertirla a grados Fahrenheit y
+									Kelvin e imprime ambos resultados haciendo uso del DOM.
+								<div class="d-grid gap-2 col-6 mx-auto">
+									<a class="btn btn-dark" type="button" 
+									href="https://camilo1821.github.io/conversor-temperaturas/" 
+									target="_blank" rel="noopener noreferrer">Ver Proyecto Desplegado
+									</a>
+								</div>
 								</p>
 							</header>
 						</article>
@@ -215,12 +255,19 @@
 							<a href="videos/demo-factorial.mp4" class="image fit ver-video"><img
 									src="images/calculadora-factorial.png" alt="Demo de Calculadora Factorial" /></a>
 							<header>
-								<h3>Calculadora Factorial</h3>
-								<p>Calculadora en Javascript que realiza la siguiente accion: halla el factorial de un 
-									número entre 0 y 170 es igual al producto de todos los números enteros positivos desde 
-									el 1 hasta dicho número, e imprime los resultados por medio del DOM.
-
-									https://camilo1821.github.io/calculadora-factorial/
+								<h3 class="btn" type="button" data-bs-toggle="collapse"
+									data-bs-target="#multiCollapseExample6" aria-expanded="false"
+									aria-controls="multiCollapseExample6">Calculadora Factorial</h3>
+								<p class="collapse multi-collapse" id="multiCollapseExample6">Calculadora en Javascript
+									que realiza la siguiente accion: halla el factorial de un número entre 0 y 170 es
+									igual al producto de todos los números enteros positivos desde el 1 hasta dicho
+									número, e imprime los resultados por medio del DOM.
+								<div class="d-grid gap-2 col-6 mx-auto">
+									<a class="btn btn-dark" type="button" 
+									href="https://camilo1821.github.io/calculadora-factorial/" 
+									target="_blank" rel="noopener noreferrer">Ver Proyecto Desplegado
+									</a>
+								</div>
 								</p>
 							</header>
 						</article>
@@ -249,7 +296,8 @@
 					resultados y comprometido con el aprendizaje continuo en desarrollo de software,
 					con gran orientación al detalle, proactividad y capacidad de resolución de problemas,
 					además de contar con excelentes habilidades para trabajar en equipo aplicando la
-					metodología ágil SCRUM.</p>
+					metodología ágil SCRUM.
+				</p>
 
 			</div>
 		</section>
@@ -297,6 +345,7 @@
 	</div>
 
 	<!-- Scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
