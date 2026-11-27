@@ -2681,3 +2681,65 @@ input, select, textarea {
 #main > section.four p {
 	color: #000;
 }
+
+/* EFECTOS DE LAS TARJETAS DE PROYECTOS */
+
+.item {
+	position: relative;
+	cursor: pointer;
+	transition: transform 0.35s ease-in-out, box-shadow 0.35s ease-in-out;
+}
+
+.item:hover {
+	transform: scale(1.05);
+	z-index: 2; /* para que quede por encima de las tarjetas vecinas */
+	box-shadow: 0 0 25px 4px rgba(4, 183, 209, 0.45); /* cyan #04B7D1 de tu nav */
+}
+
+.item h3.btn,
+.item .btn {
+	cursor: pointer;
+}
+
+/* EFECTOS DE LOS BOTONES DE LOS PROYECTOS */
+
+.item a.btn-dark {
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.item a.btn-dark:hover {
+	transform: scale(1.03);
+	box-shadow: 0 0 14px 2px rgba(255, 107, 74, 0.55);
+}
+
+/* 	TÍTULOS DE LOS PROYECTOS */
+
+.item header h3.btn {
+	font-family: inherit;   
+	font-size: 1.3em;
+	font-weight: 400;
+	color: #444;
+	letter-spacing: 0;
+	cursor: pointer;
+	padding: 0.4em 0.8em;
+	transition: color 0.3s ease-in-out;
+}
+
+.item header h3.btn:hover {
+	color: #04B7D1; /* cian de tu nav, sutil */
+}
+
+/* Flechita discreta que indica que se puede desplegar */
+.item header h3.btn::after {
+	content: "▾";
+	display: inline-block;
+	margin-left: 0.4em;
+	font-size: 0.8em;
+	opacity: 0.6;
+	transition: transform 0.3s ease-in-out;
+}
+
+.item header h3.btn[aria-expanded="true"]::after {
+	transform: rotate(180deg);
+}
